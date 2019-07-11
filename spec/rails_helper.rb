@@ -4,6 +4,7 @@ require "spec_helper"
 require File.expand_path("../config/environment", __dir__)
 require "rspec/rails"
 require "pry"
+require "vcr"
 require "capybara/rails"
 require "simplecov"
 require "shoulda/matchers"
@@ -23,7 +24,7 @@ SimpleCov.start "rails"
 # directory. Alternatively, in the individual `*_spec.rb` files, manually
 # require only the support files necessary.
 #
-# Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
+Dir[Rails.root.join('spec/support/**/*.rb')].each(&method(:require))
 
 # Checks for pending migrations before tests are run.
 # If you are not using ActiveRecord, you can remove this line.
