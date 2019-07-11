@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://pairguru-api.herokuapp.com/api/v1/movies/Kill%20Bill
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Flexirest/1.7.8
+      Connection:
+      - Keep-Alive
+      Accept:
+      - application/vnd.api+json
+      If-None-Match:
+      - W/"376c9c7ed832eb9a3f461d44a5f32f26"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 304
+      message: Not Modified
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 11 Jul 2019 23:14:00 GMT
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"376c9c7ed832eb9a3f461d44a5f32f26"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 4121237a-d483-4358-bc0d-0a8a2dd664ed
+      X-Runtime:
+      - '0.005979'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Thu, 11 Jul 2019 23:14:01 GMT
+recorded_with: VCR 4.0.0
