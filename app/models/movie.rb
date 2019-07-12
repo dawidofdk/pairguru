@@ -14,8 +14,10 @@
 
 class Movie < ApplicationRecord
   belongs_to :genre
-  validates :title, title_brackets: true
+  has_many :comments, dependent: :destroy
+
   delegate *Remote::Movie::ATTRIBUTES, to: :remote_movie, allow_nil: true
+  validates :title, title_brackets: true
 
   def poster
     return unless remote_movie&.poster

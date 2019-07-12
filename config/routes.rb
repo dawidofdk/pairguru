@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   resources :movies, only: [:index, :show] do
     get :send_info, on: :member
     get :export, on: :collection
+    resources :comments, only: %i[create destroy]
   end
 
   namespace :api do
