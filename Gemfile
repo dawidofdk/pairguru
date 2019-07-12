@@ -41,8 +41,9 @@ group :development, :test do
 end
 
 group :test do
+  gem "rspec"
   gem "shoulda-matchers"
   gem "vcr"
   gem "webmock"
-  gem "jsonapi-rspec", require: false
+  gem "jsonapi-rspec"
 end
