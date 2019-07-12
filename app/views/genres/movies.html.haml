@@ -3,4 +3,6 @@
     %h1.text-center
       Movies by genre:
       = @genre.name
-    = render 'movies/movies_table', movies: @genre.movies
+    %table.table.table-striped
+      %tbody
+        = render partial: 'movies/movie', collection: @genre.movies, cached: true, as: :movie

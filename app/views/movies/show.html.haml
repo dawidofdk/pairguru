@@ -1,5 +1,14 @@
 %h1= @movie.title
-.jumbotron
-  = @movie.description
+.jumbotron.movie_container
+  .row
+    .col-sm-4= image_tag @movie.poster, class: 'img-rounded img-responsive' if @movie.poster
+    .col-sm-8
+      %strong= link_to @movie.genre.name, movies_genre_path(@movie.genre)
+      - if @movie.released_at
+        = " (#{l(@movie.released_at, format: :movie).lstrip})"
+      %p.plot= @movie.plot
+      %p.description= @movie.description
+      .rating= "Rating: #{@movie.rating}"
+
 - if user_signed_in?
   %p= link_to 'Email me details about this movie', send_info_movie_path(@movie), class: 'btn btn-sm btn-default'

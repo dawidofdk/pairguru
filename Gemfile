@@ -12,6 +12,8 @@ gem "sass-rails"
 gem "sqlite3"
 gem "uglifier"
 
+gem "flexirest"
+
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", ">= 1.1.0", require: false
 
@@ -34,8 +36,11 @@ group :development, :test do
   gem "rspec-rails"
   gem "rubocop"
   gem "simplecov"
+  gem "dotenv-rails"
 end
 
 group :test do
   gem "shoulda-matchers"
+  gem "vcr"
+  gem "webmock"
 end

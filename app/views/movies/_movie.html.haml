@@ -1,0 +1,12 @@
+%tr
+  %td= movie.id
+  %td= image_tag movie.poster, class: 'img-rounded img-responsive' if movie.poster
+  %td.td__movie_info
+    %h4= link_to movie.title, movie
+    %p
+      %strong= link_to movie.genre.name, movies_genre_path(movie.genre)
+      - if movie.released_at
+        = " (#{l(movie.released_at, format: :movie).lstrip})"
+    %p.plot= movie.plot
+    %p.description= movie.description
+    .rating= "Rating: #{movie.rating}"

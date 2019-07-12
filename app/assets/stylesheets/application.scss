@@ -1,2 +1,29 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+.td__movie_info {
+  display: flex;
+  flex-direction: column;
+  height: 260px;
+
+  .description {
+    font-size: 13px;
+    color: gray;
+    margin-top: 15px;
+  }
+
+  .rating {
+    margin-top: auto;
+    align-self: flex-end;
+  }
+}
+
+.movie_container {
+  .plot {
+    margin-top: 15px
+  }
+
+  .rating {
+    font-size: 18px
+  }
+}
