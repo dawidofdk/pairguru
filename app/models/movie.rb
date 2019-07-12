@@ -14,6 +14,7 @@
 
 class Movie < ApplicationRecord
   belongs_to :genre
+  validates :title, title_brackets: true
   delegate *Remote::Movie::ATTRIBUTES, to: :remote_movie, allow_nil: true
 
   def poster
