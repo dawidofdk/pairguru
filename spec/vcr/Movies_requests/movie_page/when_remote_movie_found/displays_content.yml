@@ -25,7 +25,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 11 Jul 2019 23:14:00 GMT
+      - Fri, 12 Jul 2019 10:05:39 GMT
       Content-Length:
       - '0'
       Connection:
@@ -41,162 +41,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 4121237a-d483-4358-bc0d-0a8a2dd664ed
+      - f3aef9c4-80f6-48ca-9755-32a11efbfa0f
       X-Runtime:
-      - '0.005979'
-      Via:
-      - 1.1 vegur
-    body:
-      encoding: UTF-8
-      string: ''
-    http_version: 
-  recorded_at: Thu, 11 Jul 2019 23:14:01 GMT
-- request:
-    method: get
-    uri: https://pairguru-api.herokuapp.com/api/v1/movies/Kill%20Bill
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Flexirest/1.7.8
-      Connection:
-      - Keep-Alive
-      Accept:
-      - application/vnd.api+json
-      If-None-Match:
-      - W/"376c9c7ed832eb9a3f461d44a5f32f26"
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 304
-      message: Not Modified
-    headers:
-      Server:
-      - Cowboy
-      Date:
-      - Fri, 12 Jul 2019 10:05:38 GMT
-      Content-Length:
-      - '0'
-      Connection:
-      - keep-alive
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      Etag:
-      - W/"376c9c7ed832eb9a3f461d44a5f32f26"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - f94dc36a-090f-462f-be61-e8f72ab73a3a
-      X-Runtime:
-      - '0.004190'
-      Via:
-      - 1.1 vegur
-    body:
-      encoding: UTF-8
-      string: ''
-    http_version: 
-  recorded_at: Fri, 12 Jul 2019 10:05:38 GMT
-- request:
-    method: get
-    uri: https://pairguru-api.herokuapp.com/api/v1/movies/Kill%20Bill
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Flexirest/1.7.8
-      Connection:
-      - Keep-Alive
-      Accept:
-      - application/vnd.api+json
-      If-None-Match:
-      - W/"376c9c7ed832eb9a3f461d44a5f32f26"
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 304
-      message: Not Modified
-    headers:
-      Server:
-      - Cowboy
-      Date:
-      - Fri, 12 Jul 2019 10:05:38 GMT
-      Content-Length:
-      - '0'
-      Connection:
-      - keep-alive
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      Etag:
-      - W/"376c9c7ed832eb9a3f461d44a5f32f26"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - e19bd4b1-2ec3-4a86-9bc8-0cc0c7f352bf
-      X-Runtime:
-      - '0.013820'
-      Via:
-      - 1.1 vegur
-    body:
-      encoding: UTF-8
-      string: ''
-    http_version: 
-  recorded_at: Fri, 12 Jul 2019 10:05:39 GMT
-- request:
-    method: get
-    uri: https://pairguru-api.herokuapp.com/api/v1/movies/Kill%20Bill
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Flexirest/1.7.8
-      Connection:
-      - Keep-Alive
-      Accept:
-      - application/vnd.api+json
-      If-None-Match:
-      - W/"376c9c7ed832eb9a3f461d44a5f32f26"
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 304
-      message: Not Modified
-    headers:
-      Server:
-      - Cowboy
-      Date:
-      - Fri, 12 Jul 2019 10:05:38 GMT
-      Content-Length:
-      - '0'
-      Connection:
-      - keep-alive
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      Etag:
-      - W/"376c9c7ed832eb9a3f461d44a5f32f26"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 3e9b5c84-d9f8-44af-9278-a786cbb430d9
-      X-Runtime:
-      - '0.013585'
+      - '0.006731'
       Via:
       - 1.1 vegur
     body:
@@ -245,16 +92,16 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 98ea130c-19e6-4e24-85c8-fd43289ddddf
+      - 135bdc3d-ae38-42a0-a188-73c23b71ed43
       X-Runtime:
-      - '0.012606'
+      - '0.005159'
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Fri, 12 Jul 2019 10:05:39 GMT
+  recorded_at: Fri, 12 Jul 2019 10:05:40 GMT
 - request:
     method: get
     uri: https://pairguru-api.herokuapp.com/api/v1/movies/Kill%20Bill
@@ -296,14 +143,167 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 393da80a-44ef-4309-9844-c342119751a0
+      - f96620b0-1962-4a2f-9281-612feef55392
       X-Runtime:
-      - '0.004306'
+      - '0.005093'
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Fri, 12 Jul 2019 10:05:39 GMT
+  recorded_at: Fri, 12 Jul 2019 10:05:40 GMT
+- request:
+    method: get
+    uri: https://pairguru-api.herokuapp.com/api/v1/movies/Kill%20Bill
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Flexirest/1.7.8
+      Connection:
+      - Keep-Alive
+      Accept:
+      - application/vnd.api+json
+      If-None-Match:
+      - W/"376c9c7ed832eb9a3f461d44a5f32f26"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 304
+      message: Not Modified
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Fri, 12 Jul 2019 10:05:39 GMT
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"376c9c7ed832eb9a3f461d44a5f32f26"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e8a3c4e7-b5de-41db-833e-3dfd0005e608
+      X-Runtime:
+      - '0.007485'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Fri, 12 Jul 2019 10:05:40 GMT
+- request:
+    method: get
+    uri: https://pairguru-api.herokuapp.com/api/v1/movies/Kill%20Bill
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Flexirest/1.7.8
+      Connection:
+      - Keep-Alive
+      Accept:
+      - application/vnd.api+json
+      If-None-Match:
+      - W/"376c9c7ed832eb9a3f461d44a5f32f26"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 304
+      message: Not Modified
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Fri, 12 Jul 2019 10:05:39 GMT
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"376c9c7ed832eb9a3f461d44a5f32f26"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - f4894db2-3d26-44d1-82bb-3d599f602540
+      X-Runtime:
+      - '0.025891'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Fri, 12 Jul 2019 10:05:40 GMT
+- request:
+    method: get
+    uri: https://pairguru-api.herokuapp.com/api/v1/movies/Kill%20Bill
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Flexirest/1.7.8
+      Connection:
+      - Keep-Alive
+      Accept:
+      - application/vnd.api+json
+      If-None-Match:
+      - W/"376c9c7ed832eb9a3f461d44a5f32f26"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 304
+      message: Not Modified
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Fri, 12 Jul 2019 10:05:40 GMT
+      Content-Length:
+      - '0'
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Etag:
+      - W/"376c9c7ed832eb9a3f461d44a5f32f26"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 4c188b72-3e42-4a40-a82e-fe1ed86b7de4
+      X-Runtime:
+      - '0.006347'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Fri, 12 Jul 2019 10:05:40 GMT
 recorded_with: VCR 4.0.0
