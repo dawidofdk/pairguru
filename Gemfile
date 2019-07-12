@@ -13,6 +13,7 @@ gem "sqlite3"
 gem "uglifier"
 
 gem "flexirest"
+gem "jsonapi-rails"
 
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", ">= 1.1.0", require: false
@@ -43,4 +44,5 @@ group :test do
   gem "shoulda-matchers"
   gem "vcr"
   gem "webmock"
+  gem "jsonapi-rspec", require: false
 end
