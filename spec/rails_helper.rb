@@ -3,11 +3,13 @@ ENV["RAILS_ENV"] ||= "test"
 require "spec_helper"
 require File.expand_path("../config/environment", __dir__)
 require "rspec/rails"
+require "jsonapi/rspec"
 require "pry"
 require "vcr"
 require "capybara/rails"
 require "simplecov"
 require "shoulda/matchers"
+
 SimpleCov.start "rails"
 # Add additional requires below this line. Rails is not loaded until this point!
 
@@ -35,6 +37,9 @@ RSpec.configure do |config|
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
   config.include FactoryBot::Syntax::Methods
   config.include Capybara::DSL
+  config.include JSONAPI::RSpec
+
+  config.include Helpers
   # If you're not using ActiveRecord, or you'd prefer not to run each of your
   # examples within a transaction, remove the following line or assign false
   # instead of true.

@@ -3,16 +3,16 @@ Rails.application.routes.draw do
 
   root "home#welcome"
   resources :genres, only: :index do
-    member do
-      get "movies"
-    end
+    get :movies, on: :member
   end
   resources :movies, only: [:index, :show] do
-    member do
-      get :send_info
-    end
-    collection do
-      get :export
+    get :send_info, on: :member
+    get :export, on: :collection
+  end
+
+  namespace :api do
+    namespace :v1 do
+      resources :movies, only: %i[index show]
     end
   end
 end
