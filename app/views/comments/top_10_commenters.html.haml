@@ -1,0 +1,15 @@
+%h3 Top 10 commenters
+
+.col-md-6
+  %table.table
+    %thead
+      %tr
+        %th
+        %th User
+        %th Comments
+    %tbody
+      - @users.each.with_index(1) do |user, i|
+        %tr
+          %td= "#{i}."
+          %td= user.email
+          %td= user.comments_count

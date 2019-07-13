@@ -10,6 +10,7 @@ Rails.application.routes.draw do
     get :export, on: :collection
     resources :comments, only: %i[create destroy]
   end
+  get :top_10_commenters, to: "comments#top_10_commenters"
 
   namespace :api do
     namespace :v1 do

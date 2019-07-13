@@ -1,5 +1,5 @@
 class CommentsController < ApplicationController
-  before_action :authenticate_user!
+  before_action :authenticate_user!, except: :top_10_commenters
 
   def create
     @comment = movie.comments.build(comment_params)
@@ -22,6 +22,16 @@ class CommentsController < ApplicationController
     end
 
     redirect_to movie_path(movie)
+  end
+
+  def top_10_commenters
+    @users = User
+      .select("users.*, count(*) as comments_count")
+      .group(:id)
+      .joins(:comments)
+      .where(comments: { created_at: 1.week.ago..Time.current })
+      .order("comments_count DESC")
+      .limit(10)
   end
 
   private
