@@ -1,0 +1,7 @@
+.col-sm-6.col-md-4
+  .panel.panel-default.comment
+    .panel-heading
+      %span.commented_user= comment.user.email
+      - if comment.user == current_user
+        .pull-right= link_to "Remove", [comment.movie, comment], method: :delete, data: { confirm: "Are you sure?" }
+    .panel-body= comment.content

@@ -1,0 +1,14 @@
+- if @movie.comments.where(user: current_user).any?
+  %h4 You have already left the comment
+- else
+  %h3 Add a comment:
+  .col-sm-6.col-md-4
+    = form_with(model: [@movie, @movie.comments.build], local: true) do |form|
+      - if flash[:errors].present?
+        .alert.alert-danger
+          - flash[:errors].each do |error|
+            %li= error
+      %p
+        = form.text_area :content, class: 'form-control', rows: 3, placeholder: 'Write your comment'
+      %p.pull-right
+        = form.submit 'Create', class: 'btn btn-success'
